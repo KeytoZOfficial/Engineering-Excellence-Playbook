@@ -12,6 +12,7 @@
 - [Sprint retrospective](#sprint-retrospective)
 - [Release management](#release-management)
 - [Linking code and Jira](#linking-code-and-jira)
+- [Tools and Jira features by phase](#tools-and-jira-features-by-phase)
 - [Anti-patterns](#anti-patterns)
 
 ### Quick checklist
@@ -76,6 +77,29 @@
 - PR titles include the main Jira key; PR description links all related keys.
 - Commits contain Jira keys (subject or footer) per the commit guidelines.
 - Automation may transition tickets on PR merge; ensure states are accurate.
+
+### Tools and Jira features by phase
+- Backlog grooming (refinement)
+  - Jira: Backlog view with Epics panel; estimation via Story points field.
+  - Tooling: Planning Poker Online for collaborative estimation (Jira plugin available): `https://planningpokeronline.com/`
+- Sprint planning
+  - Jira: Scrum boards and Sprints; set sprint goals, assign issues, set initial estimates.
+  - Jira reports: Capacity via assignee filters; review Velocity and Burndown from previous sprints.
+- Daily standups
+  - Jira: Active sprint board (“To Do/In Progress/Done”) and “Assigned to me” filters for quick status.
+  - Dashboards: Saved filters, swimlanes by assignee, and quick filters for blockers/priority.
+- Weekly team sync
+  - Jira: Dashboards combining Burndown, Velocity, Cumulative Flow Diagram, and Control Chart.
+  - Use filters to review spillover risk and dependency status across teams.
+- Sprint demos
+  - Jira: Demo only “Done” issues; attach screenshots or short recordings directly to tickets.
+  - Link PRs and deployments in the Development panel for traceability.
+- Sprint retrospective
+  - Jira: Track retro action items as tickets in an improvement project with labels (e.g., `retro-action`).
+  - Use dashboards to follow-through on owners and due dates.
+- Release management
+  - Jira: Versions/Releases; set Fix Version on issues, manage release notes, and track status.
+  - Link CI/CD deployments to versions for status visibility where integrated.
 
 ### Anti-patterns
 - Vague tickets with missing acceptance criteria or test notes.
