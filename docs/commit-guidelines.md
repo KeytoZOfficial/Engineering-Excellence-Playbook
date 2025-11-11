@@ -9,6 +9,7 @@
 - [Atomic commits](#atomic-commits)
 - [Amend, squash, and merge strategy](#amend-squash-and-merge-strategy)
 - [Branch naming](#branch-naming)
+- [Tooling enforcement](#tooling-enforcement)
 - [Examples](#examples)
 - [Anti-patterns](#anti-patterns)
 
@@ -55,6 +56,9 @@ Rules:
 - Bugfix: `fix/JIRA-456-brief-cause`
 - Chore/infra: `chore/JIRA-789-context`
 - Avoid personal names; use ticket keys and a brief slug.
+
+### Tooling enforcement
+- Use `husky` to run commit-msg hooks and `lint-staged` for fast pre-commit checks.
 
 ### Examples
 Good:
